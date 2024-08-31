@@ -62,7 +62,7 @@ const Footer = () => {
           <p className="mb-6 md:mb-0">
             Copyright © 2024 TokenLens Team . All Rights Reserved.{" "}
           </p>
-          <p>Powered by Blockfuse Labs Cohort One</p>
+          <p>Powered by Blockfuse Labs Cohort1</p>
         </div>
       </div>
     </div>
