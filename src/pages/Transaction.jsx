@@ -113,7 +113,7 @@ export const Transaction = () => {
     };
 
     return (
-      <div className="grid w-[1200px]  xl:w-full grid-cols-7  border-t last:border-b">
+      <div className="grid w-[1200px] p-2 xl:w-full grid-cols-7  border-t last:border-b">
         <div className="flex items-center">
           <span
             onClick={handleDetails}
@@ -125,6 +125,7 @@ export const Transaction = () => {
         </div>
         <div className="flex items-center justify-center">
           <a
+            title="View on Etherscan"
             target="_blank"
             href={`https://etherscan.io/block/${data.blockNumber}`}
             className="text-blue-500"
@@ -137,6 +138,7 @@ export const Transaction = () => {
         </div>
         <div className=" items-center justify-center">
           <a
+            title="View on Etherscan"
             target="_blank"
             href={`https://etherscan.io/address/${data.from}`}
             className="text-blue-500"
@@ -146,6 +148,7 @@ export const Transaction = () => {
         </div>
         <div className=" items-center justify-center">
           <a
+            title="View on Etherscan"
             target="_blank"
             href={`https://etherscan.io/address/${data.to}`}
             className="text-blue-500"
@@ -155,6 +158,7 @@ export const Transaction = () => {
         </div>
         <div className="items-center justify-center">
           <a
+            title="View on Etherscan"
             target="_blank"
             href={`https://etherscan.io/address/${data.transactionHash}`}
             className="text-blue-500"
@@ -197,11 +201,9 @@ export const Transaction = () => {
               <div className="border py-2">ID</div>
               <div className="border py-2">Block Number</div>
               <div className="border py-2">Block Timestamp</div>
-              <div className="hidden md:block border py-2">From</div>
-              <div className="hidden lg:block border py-2">To</div>
-              <div className="hidden lg:block border py-2">
-                Transaction Hash
-              </div>
+              <div className="border py-2">From</div>
+              <div className="border py-2">To</div>
+              <div className="border py-2">Transaction Hash</div>
               <div className="border py-2">Value</div>
             </div>
             {transfers.length > 0
