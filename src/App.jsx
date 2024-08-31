@@ -1,25 +1,27 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import './App.css'
-import Navbar from "./components/Navbar"
-import Footer from "./components/Footer"
-import Hero from "./components/DashboardComponents/Hero"
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Hero from "./components/DashboardComponents/Hero";
+import { Transactions } from "./pages/transactions";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <Router>
-   <div className='App'>
-    <Navbar />
-    <Routes>
-    <Route path="/" element={<Hero />} />
-    </Routes>
-    <Footer />
-   </div>
-   
-   </Router>
-  )
+      <div className="App flex flex-col justify-between">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route
+            path="/transactions"
+            element={<Transactions />}
+          />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;

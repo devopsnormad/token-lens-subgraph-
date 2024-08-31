@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 import {
   FaLinkedinIn,
@@ -8,10 +8,9 @@ import {
   FaYoutube,
 } from "react-icons/fa6";
 
-
 const Footer = () => {
   return (
-    <div className="w-full  bg-gradient-to-r from-primary-50 via-primary-200 to-primary-300 p-4">
+    <div className="w-full  bottom-0  bg-gradient-to-r from-primary-50 via-primary-200 to-primary-300 p-4">
       <div className="px-2 mt-3 grid-cols-1 gap-8">
         {/* Social Media Links */}
         <div className="flex flex-col items-start gap-4 col-span-1 sm:col-span-2 lg:col-span-4">
