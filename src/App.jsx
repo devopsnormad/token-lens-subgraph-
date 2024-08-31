@@ -4,7 +4,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Hero from "./components/DashboardComponents/Hero";
-import { Transactions } from "./pages/transactions";
+import { Transaction } from "./pages/Transaction";
 
 function App() {
   return (
@@ -13,10 +13,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Hero />} />
-          <Route
-            path="/transactions"
-            element={<Transactions />}
-          />
+          <Route path="/transactions" element={<Transaction />} />
         </Routes>
         <Footer />
       </div>

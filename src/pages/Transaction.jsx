@@ -78,7 +78,7 @@ const DetailsModal = ({ open, data, close }) => {
   );
 };
 
-export const Transactions = () => {
+export const Transaction = () => {
   const [transfers, setTransfers] = useState([]);
   const [open, setOpen] = useState(false);
   const [transactionDetails, setTransactionDetails] = useState({});
