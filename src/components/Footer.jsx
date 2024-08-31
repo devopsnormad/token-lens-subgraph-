@@ -58,7 +58,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t mt-5 border-primary-mt-8 pt-4 flex md:flex-row justify-between text-sm sm:text-base text-gray-100">
+        <div className="border-t mt-5 border-primary-mt-8 pt-4 flex flex-col md:flex-row justify-between text-sm sm:text-base text-gray-100">
           <p className="mb-6 md:mb-0">
             Copyright © 2024 TokenLens Team . All Rights Reserved.{" "}
           </p>

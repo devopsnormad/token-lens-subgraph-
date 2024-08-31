@@ -77,12 +77,10 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="px-10 my-[100px]">
-      <h1 className="text-3xl  font-bold text-primary-100 mb-5">
-        Total Transfers
-      </h1>
-      <div className="grid grid-cols-2 gap-10  w-full  justify-between">
-        <div className="grid  grid-cols-2 gap-10  justify-between">
+    <div className=" px-5 md:px-10 my-[120px]">
+      <h1 className="text-3xl  font-bold text-primary-100 mb-10">TOKENS</h1>
+      <div className=" flex flex-col lg:grid lg:grid-cols-2 gap-10  w-full  justify-between">
+        <div className="flex flex-col sm:grid  sm:grid-cols-2 gap-10  justify-between">
           <Link
             onClick={() => console.log("usdt was clicked")}
             to="/transactions?token=usdt"
