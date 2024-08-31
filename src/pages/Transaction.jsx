@@ -189,7 +189,7 @@ export const Transaction = () => {
       <div>
         {/* Navbar */}
         <div
-          className={`pt-16 pb-6 px-5 md:px-10 ${
+          className={` pt-10 md:pt-16 pb-6 px-5 md:px-10 ${
             loading ? "h-[100vh]" : "h-fit"
           }`}
         >

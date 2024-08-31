@@ -77,7 +77,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className=" px-5 md:px-10 my-[120px]">
+    <div className=" px-5 md:px-10 my-[20px] md:my-[30px]">
       <h1 className="text-3xl  font-bold text-primary-100 mb-10">TOKENS</h1>
       <div className=" flex flex-col lg:grid lg:grid-cols-2 gap-10  w-full  justify-between">
         <div className="flex flex-col sm:grid  sm:grid-cols-2 gap-10  justify-between">
