@@ -140,26 +140,29 @@ export const Transaction = () => {
         </div>
         <div className="border h-10 flex justify-center items-center">
           <a
+            target="_blank"
             href={`https://etherscan.io/address/${data.from}`}
             className="text-blue-500"
           >
-            {truncText(data.from, 20)}
+            {truncText(data.from, 15)}
           </a>
         </div>
         <div className="border h-10 flex justify-center items-center">
           <a
+            target="_blank"
             href={`https://etherscan.io/address/${data.to}`}
             className="text-blue-500"
           >
-            {truncText(data.to, 20)}
+            {truncText(data.to, 15)}
           </a>
         </div>
         <div className="border h-10 flex justify-center items-center">
           <a
+            target="_blank"
             href={`https://etherscan.io/address/${data.transactionHash}`}
             className="text-blue-500"
           >
-            {truncText(data.transactionHash, 20)}
+            {truncText(data.transactionHash, 15)}
           </a>
         </div>
         <div className="border h-10 flex justify-center items-center">
