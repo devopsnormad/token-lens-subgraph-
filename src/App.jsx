@@ -9,12 +9,14 @@ import { Transaction } from "./pages/Transaction";
 function App() {
   return (
     <Router>
-      <div className="App flex flex-col justify-between">
+      <div className="App min-h-screen flex flex-col">
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Hero />} />
-          <Route path="/transactions" element={<Transaction />} />
-        </Routes>
+        <div className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Hero />} />
+            <Route path="/transactions" element={<Transaction />} />
+          </Routes>
+        </div>
         <Footer />
       </div>
     </Router>
